@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (toggle) */
+:root {
+  color-scheme: light;
+  --bg-rgb: 246 247 251;
+  --fg-rgb: 10 12 18;
+  --muted-rgb: 88 95 115;
+  --accent-rgb: 8 145 178;
+  --accent2-rgb: 109 40 217;
+  --glass: rgba(255, 255, 255, 0.7);
+  --line-soft: rgba(10, 12, 18, 0.09);
+  --grid: rgba(10, 12, 18, 0.06);
+  --glow-1: rgba(8, 145, 178, 0.2);
+  --glow-2: rgba(109, 40, 217, 0.14);
+  --glass-shadow: 0 20px 50px -25px rgba(10, 12, 18, 0.25);
+}
+
+/* Dark theme (default) */
+html.dark {
+  color-scheme: dark;
+  --bg-rgb: 5 6 10;
+  --fg-rgb: 238 241 247;
+  --muted-rgb: 138 146 166;
+  --accent-rgb: 34 211 238;
+  --accent2-rgb: 167 139 250;
+  --glass: rgba(255, 255, 255, 0.035);
+  --line-soft: rgba(255, 255, 255, 0.08);
+  --grid: rgba(255, 255, 255, 0.045);
+  --glow-1: rgba(34, 211, 238, 0.14);
+  --glow-2: rgba(167, 139, 250, 0.12);
+  --glass-shadow: 0 25px 60px -25px rgba(0, 0, 0, 0.8);
+}
+
+::selection {
+  background: rgb(var(--accent-rgb) / 0.35);
+}
+
+/* Glassmorphism surface */
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--line-soft);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.text-gradient {
+  background-image: linear-gradient(
+    90deg,
+    rgb(var(--accent-rgb)),
+    rgb(var(--accent2-rgb))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Skill logos keep their brand color; black logos switch to white in dark mode */
+.brand-icon {
+  color: var(--brand-light);
+}
+
+html.dark .brand-icon {
+  color: var(--brand-dark);
+}
+
+/* Subtle technical grid, faded from the top */
+.bg-grid {
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 80%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 80%);
+}
+
+.fade-mask {
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 40%, transparent 78%);
+  mask-image: radial-gradient(ellipse at center, #000 40%, transparent 78%);
+}
+
+/* Atmospheric background glows */
+.glow {
+  position: fixed;
+  width: 42rem;
+  height: 42rem;
+  border-radius: 9999px;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: -10;
+}
+
+.glow-1 {
+  top: -14rem;
+  left: -12rem;
+  background: var(--glow-1);
+}
+
+.glow-2 {
+  bottom: -16rem;
+  right: -12rem;
+  background: var(--glow-2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .glow-1 {
+    animation: drift 24s ease-in-out infinite alternate;
+  }
+  .glow-2 {
+    animation: drift 30s ease-in-out infinite alternate-reverse;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(80px, 60px, 0) scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

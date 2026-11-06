@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <title>Budgetly - mobile app mockup</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#022c22"/>
+      <stop offset="0.55" stop-color="#064e3b"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#ffffff" fill-opacity="0.12"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#001a14" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#dots)"/>
+  <circle cx="1180" cy="430" r="460" fill="url(#glow)"/>
+
+  <g font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+    <g filter="url(#shadow)">
+      <rect x="150" y="280" width="440" height="210" rx="28" fill="#ffffff"/>
+      <text x="186" y="326" font-size="22" fill="#64748b">Monthly savings</text>
+      <text x="186" y="392" font-size="56" font-weight="700" fill="#059669">+18%</text>
+      <rect x="186" y="428" width="36" height="30" rx="10" fill="#a7f3d0"/>
+      <rect x="250" y="414" width="36" height="44" rx="10" fill="#a7f3d0"/>
+      <rect x="314" y="422" width="36" height="36" rx="10" fill="#a7f3d0"/>
+      <rect x="378" y="400" width="36" height="58" rx="10" fill="#a7f3d0"/>
+      <rect x="442" y="408" width="36" height="50" rx="10" fill="#a7f3d0"/>
+      <rect x="506" y="384" width="36" height="74" rx="10" fill="#059669"/>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="150" y="520" width="400" height="120" rx="28" fill="#0f172a"/>
+      <text x="186" y="566" font-size="22" fill="#a7f3d0">Food budget</text>
+      <text x="186" y="614" font-size="36" font-weight="700" fill="#ffffff">$320 left</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="190" y="670" width="460" height="150" rx="28" fill="#ffffff"/>
+      <text x="226" y="716" font-size="22" fill="#64748b">Emergency fund</text>
+      <rect x="226" y="736" width="380" height="18" rx="9" fill="#e2e8f0"/>
+      <rect x="226" y="736" width="258" height="18" rx="9" fill="url(#accent)"/>
+      <text x="226" y="790" font-size="22" font-weight="700" fill="#0f172a">68% of $5,000</text>
+    </g>
+  </g>
+
+  <rect x="960" y="70" width="430" height="860" rx="58" fill="#0b1020" filter="url(#shadow)"/>
+  <rect x="960" y="70" width="430" height="860" rx="58" fill="none" stroke="#334155" stroke-width="3"/>
+  <rect x="974" y="84" width="402" height="832" rx="46" fill="#f8fafc"/>
+  <rect x="1130" y="96" width="120" height="34" rx="17" fill="#0b1020"/>
+
+  <g font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+    <text x="1010" y="130" font-size="22" font-weight="600" fill="#0f172a">9:41</text>
+    <text x="1010" y="192" font-size="20" fill="#64748b">Welcome back</text>
+    <text x="1010" y="236" font-size="36" font-weight="700" fill="#0f172a">My wallet</text>
+    <circle cx="1340" cy="216" r="26" fill="#34d399"/>
+
+    <rect x="1000" y="262" width="362" height="170" rx="28" fill="url(#card)"/>
+    <circle cx="1300" cy="330" r="54" fill="#ffffff" fill-opacity="0.08"/>
+    <text x="1028" y="306" font-size="20" fill="#d1fae5">Total balance</text>
+    <text x="1028" y="364" font-size="44" font-weight="700" fill="#ffffff">$4,820.50</text>
+    <text x="1028" y="406" font-size="20" fill="#a7f3d0">+ $320 this month</text>
+
+    <rect x="1000" y="452" width="362" height="190" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cx="1110" cy="547" r="62" fill="none" stroke="#f1f5f9" stroke-width="22"/>
+    <circle cx="1110" cy="547" r="62" fill="none" stroke="#34d399" stroke-width="22" stroke-dasharray="156 390" transform="rotate(-90 1110 547)"/>
+    <circle cx="1110" cy="547" r="62" fill="none" stroke="#38bdf8" stroke-width="22" stroke-dasharray="97 390" stroke-dashoffset="-156" transform="rotate(-90 1110 547)"/>
+    <circle cx="1110" cy="547" r="62" fill="none" stroke="#a78bfa" stroke-width="22" stroke-dasharray="137 390" stroke-dashoffset="-253" transform="rotate(-90 1110 547)"/>
+    <text x="1110" y="543" font-size="16" fill="#64748b" text-anchor="middle">Spent</text>
+    <text x="1110" y="571" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle">$1,240</text>
+    <circle cx="1206" cy="504" r="8" fill="#34d399"/>
+    <text x="1224" y="510" font-size="20" fill="#334155">Food 40%</text>
+    <circle cx="1206" cy="540" r="8" fill="#38bdf8"/>
+    <text x="1224" y="546" font-size="20" fill="#334155">Transport 25%</text>
+    <circle cx="1206" cy="576" r="8" fill="#a78bfa"/>
+    <text x="1224" y="582" font-size="20" fill="#334155">Bills 35%</text>
+
+    <circle cx="1032" cy="680" r="24" fill="#ecfdf5"/>
+    <circle cx="1032" cy="680" r="8" fill="#34d399"/>
+    <text x="1070" y="676" font-size="22" font-weight="700" fill="#0f172a">Coffee shop</text>
+    <text x="1070" y="702" font-size="18" fill="#64748b">Today</text>
+    <text x="1362" y="688" font-size="22" font-weight="700" fill="#dc2626" text-anchor="end">-$4.50</text>
+
+    <circle cx="1032" cy="740" r="24" fill="#ecfdf5"/>
+    <circle cx="1032" cy="740" r="8" fill="#059669"/>
+    <text x="1070" y="736" font-size="22" font-weight="700" fill="#0f172a">Salary</text>
+    <text x="1070" y="762" font-size="18" fill="#64748b">Yesterday</text>
+    <text x="1362" y="748" font-size="22" font-weight="700" fill="#059669" text-anchor="end">+$2,000.00</text>
+
+    <circle cx="1032" cy="800" r="24" fill="#ecfdf5"/>
+    <circle cx="1032" cy="800" r="8" fill="#f59e0b"/>
+    <text x="1070" y="796" font-size="22" font-weight="700" fill="#0f172a">Groceries</text>
+    <text x="1070" y="822" font-size="18" fill="#64748b">Monday</text>
+    <text x="1362" y="808" font-size="22" font-weight="700" fill="#dc2626" text-anchor="end">-$86.20</text>
+
+    <rect x="1000" y="846" width="362" height="50" rx="25" fill="#0f172a"/>
+    <text x="1181" y="877" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">View all transactions</text>
+  </g>
+</svg>

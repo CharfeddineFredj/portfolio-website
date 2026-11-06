@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <title>Campus Connect - mobile app mockup</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.55" stop-color="#1e3a8a"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#ffffff" fill-opacity="0.12"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#020617" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect width="1600" height="1000" fill="url(#dots)"/>
+  <circle cx="1180" cy="430" r="460" fill="url(#glow)"/>
+
+  <g font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+    <g filter="url(#shadow)">
+      <rect x="150" y="260" width="460" height="140" rx="26" fill="#ffffff"/>
+      <circle cx="206" cy="330" r="34" fill="url(#accent)"/>
+      <path d="M190 330 L201 341 L223 317" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="262" y="312" font-size="22" fill="#64748b">Next class</text>
+      <text x="262" y="350" font-size="26" font-weight="700" fill="#0f172a">Software Architecture</text>
+      <text x="262" y="382" font-size="20" fill="#475569">In 25 min - Room B12</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="150" y="440" width="300" height="200" rx="26" fill="#ffffff"/>
+      <circle cx="240" cy="530" r="52" fill="none" stroke="#e2e8f0" stroke-width="14"/>
+      <circle cx="240" cy="530" r="52" fill="none" stroke="url(#accent)" stroke-width="14" stroke-linecap="round" stroke-dasharray="307 327" transform="rotate(-90 240 530)"/>
+      <text x="240" y="539" font-size="26" font-weight="700" fill="#0f172a" text-anchor="middle">94%</text>
+      <text x="330" y="515" font-size="20" fill="#64748b">Attendance</text>
+      <text x="330" y="552" font-size="24" font-weight="700" fill="#0f172a">On track</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="250" y="680" width="420" height="112" rx="28" fill="#0f172a"/>
+      <circle cx="286" cy="736" r="9" fill="#34d399"/>
+      <text x="310" y="744" font-size="26" font-weight="700" fill="#ffffff">3 new course updates</text>
+      <text x="310" y="774" font-size="20" fill="#94a3b8">Tap to review</text>
+    </g>
+  </g>
+
+  <rect x="960" y="70" width="430" height="860" rx="58" fill="#0b1020" filter="url(#shadow)"/>
+  <rect x="960" y="70" width="430" height="860" rx="58" fill="none" stroke="#334155" stroke-width="3"/>
+  <rect x="974" y="84" width="402" height="832" rx="46" fill="#f8fafc"/>
+  <circle cx="1176" cy="113" r="11" fill="#0b1020"/>
+
+  <g font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+    <text x="1010" y="130" font-size="22" font-weight="600" fill="#0f172a">9:41</text>
+    <text x="1010" y="192" font-size="22" fill="#64748b">Good morning</text>
+    <text x="1010" y="236" font-size="34" font-weight="700" fill="#0f172a">Your timetable</text>
+
+    <rect x="1010" y="262" width="60" height="58" rx="18" fill="url(#accent)"/>
+    <text x="1040" y="298" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Mon</text>
+    <rect x="1084" y="262" width="60" height="58" rx="18" fill="#e2e8f0"/>
+    <text x="1114" y="298" font-size="20" font-weight="600" fill="#334155" text-anchor="middle">Tue</text>
+    <rect x="1158" y="262" width="60" height="58" rx="18" fill="#e2e8f0"/>
+    <text x="1188" y="298" font-size="20" font-weight="600" fill="#334155" text-anchor="middle">Wed</text>
+    <rect x="1232" y="262" width="60" height="58" rx="18" fill="#e2e8f0"/>
+    <text x="1262" y="298" font-size="20" font-weight="600" fill="#334155" text-anchor="middle">Thu</text>
+    <rect x="1306" y="262" width="60" height="58" rx="18" fill="#e2e8f0"/>
+    <text x="1336" y="298" font-size="20" font-weight="600" fill="#334155" text-anchor="middle">Fri</text>
+
+    <rect x="1000" y="340" width="362" height="110" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="1016" y="362" width="6" height="66" rx="3" fill="#38bdf8"/>
+    <text x="1040" y="374" font-size="20" fill="#64748b">09:00 - 10:30</text>
+    <text x="1040" y="408" font-size="26" font-weight="700" fill="#0f172a">Software Architecture</text>
+    <text x="1040" y="436" font-size="20" fill="#475569">Room B12 - Lecture</text>
+
+    <rect x="1000" y="462" width="362" height="110" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="1016" y="484" width="6" height="66" rx="3" fill="#8b5cf6"/>
+    <text x="1040" y="496" font-size="20" fill="#64748b">11:00 - 12:30</text>
+    <text x="1040" y="530" font-size="26" font-weight="700" fill="#0f172a">Database Systems</text>
+    <text x="1040" y="558" font-size="20" fill="#475569">Lab 3 - Practical</text>
+
+    <rect x="1000" y="584" width="362" height="110" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="1016" y="606" width="6" height="66" rx="3" fill="#14b8a6"/>
+    <text x="1040" y="618" font-size="20" fill="#64748b">14:00 - 15:30</text>
+    <text x="1040" y="652" font-size="26" font-weight="700" fill="#0f172a">Web Engineering</text>
+    <text x="1040" y="680" font-size="20" fill="#475569">Room A04 - Lecture</text>
+
+    <rect x="1000" y="706" width="362" height="104" rx="22" fill="#eef2ff" stroke="#c7d2fe" stroke-width="2"/>
+    <text x="1032" y="740" font-size="16" font-weight="700" fill="#4f46e5" letter-spacing="1.5">ANNOUNCEMENT</text>
+    <text x="1032" y="772" font-size="24" font-weight="700" fill="#0f172a">Exam schedule published</text>
+    <text x="1032" y="798" font-size="18" fill="#64748b">2 minutes ago</text>
+
+    <rect x="1000" y="834" width="362" height="64" rx="32" fill="#0f172a"/>
+    <circle cx="1060" cy="866" r="10" fill="url(#accent)"/>
+    <circle cx="1150" cy="866" r="10" fill="#475569"/>
+    <circle cx="1240" cy="866" r="10" fill="#475569"/>
+    <circle cx="1330" cy="866" r="10" fill="#475569"/>
+  </g>
+</svg>
